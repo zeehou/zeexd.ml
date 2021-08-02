@@ -1,5 +1,8 @@
 <template>
+
+
   <div id="app">
+    <n-back-top :right="100" />
     <header>
       <h1>Counter-Strike: Global Offensive</h1>
       <!-- <h1>Config</h1> -->
@@ -66,7 +69,15 @@
 
     <crosshair />
 
-    <n-back-top :right="40" />
+    
+
+  
+
+
+  
+  
+
+  
   </div>
 </template>
 
