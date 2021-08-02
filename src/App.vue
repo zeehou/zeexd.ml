@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <header>
-      <h1>Counter-Strike: Global Offensive!</h1>
+      <h1>Counter-Strike: Global Offensive</h1>
       <!-- <h1>Config</h1> -->
-      
+
       <div class="test">
         <n-card
           id="config"
@@ -15,18 +15,24 @@
           }"
         >
           <div class="c1">
-            整合版(网吧)：<n-button tag="a" href="cfg/wb.cfg">wb.cfg</n-button>
+            游戏：<n-button class="btnconfig" tag="a" href="cfg/wb.cfg"
+              >Config</n-button
+            >
+            
+            <n-button tag="a" href="cfg/autoexec.cfg">AutoExec</n-button>
+          </div>
+          <div>
+            练习：<n-button class="btnconfig" tag="a" href="cfg/bot1.cfg"
+              >Bot1</n-button
+            >
+            <n-button class="btnconfig" tag="a" href="cfg/bot2.cfg"
+              >Bot2</n-button
+            >
+            <n-button tag="a" href="cfg/train.cfg">Train</n-button>
+            
           </div>
 
-          <div>
-            独立版(家里)：<n-button
-              class="btnconfig"
-              tag="a"
-              href="cfg/config.cfg"
-              >config</n-button
-            >
-            <n-button tag="a" href="cfg/autoexec.cfg">autoexec</n-button>
-          </div>
+          <div></div>
         </n-card>
         <n-card
           id="config"
