@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>Counter-Strike: Global Offensive</h1>
+      <h1>Counter-Strike: Global Offensive!</h1>
       <!-- <h1>Config</h1> -->
       
       <div class="test">
