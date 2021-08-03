@@ -68,9 +68,9 @@
       </div>
     </header>
 
-    <h2>Pro Config：</h2>
+    <h2 class="animate__animated animate__backInUp">Pro Config：</h2>
 
-    <crosshair />
+    <crosshair class="animate__animated animate__backInUp" />
 
 
 
