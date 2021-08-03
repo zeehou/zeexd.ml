@@ -1,16 +1,15 @@
 <template>
-
-
   <div id="app">
     <n-back-top :right="100" />
     <header>
-      <h1>Counter-Strike: Global Offensive</h1>
+      <h1 class="animate__animated animate__lightSpeedInRight">Counter-Strike: Global Offensive</h1>
       <!-- <h1>Config</h1> -->
+     
 
-      <div class="test">
+      <div class="test" >
         <n-card
           id="config"
-          title="Config"
+          title="Config" 
           hoverable
           :segmented="{
             content: 'hard',
@@ -18,11 +17,14 @@
           }"
         >
           <div class="c1">
-            游戏：<n-button class="btnconfig" tag="a" href="cfg/wb.cfg"
+            <n-tooltip trigger="hover" placement="top-start">
+              <template #trigger> <span class="animate__animated animate__flip">游戏：</span></template>
+              请尽量把右方的两个cfg文件都放置在<br>csgo根目录下的cfg文件夹内 </n-tooltip
+            ><n-button class="btnconfig animate__animated animate__jello" tag="a" href="cfg/wb.cfg"
               >Config</n-button
             >
-            
-            <n-button tag="a" href="cfg/autoexec.cfg">AutoExec</n-button>
+
+            <n-button id="auto" tag="a" href="cfg/autoexec.cfg">AutoExec</n-button>
           </div>
           <div>
             练习：<n-button class="btnconfig" tag="a" href="cfg/bot1.cfg"
@@ -32,7 +34,6 @@
               >Bot2</n-button
             >
             <n-button tag="a" href="cfg/train.cfg">Train</n-button>
-            
           </div>
 
           <div></div>
@@ -69,22 +70,24 @@
 
     <crosshair />
 
-    
-
-  
 
 
-  
-  
-
-  
+     
   </div>
+
+
+
+ 
 </template>
 
+
 <script>
+
 // import HelloWorld from './components/HelloWorld.vue';
 import crosshair from "./components/crosshair.vue";
-import { NButton, NBackTop, NCard } from "naive-ui";
+import { NButton, NBackTop, NCard, NTooltip } from "naive-ui";
+// import anime from 'animejs';
+
 
 export default {
   name: "App",
@@ -95,8 +98,11 @@ export default {
     NButton,
     NBackTop,
     NCard,
+    NTooltip,
+  
   },
 };
+
 </script>
 
 <style>
@@ -137,4 +143,15 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+#auto:focus{
+  animation: bounceIn ;
+  animation-duration: 2s;
+
+}
+
+
+
+/* .animate__animated.animate__bounce {
+  --animate-duration: 2s;
+} */
 </style>
