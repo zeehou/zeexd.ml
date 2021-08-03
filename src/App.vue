@@ -131,9 +131,7 @@ body {
 .btnconfig {
   margin-right: 5px;
 }
-.n-button {
-  width: 60px;
-}
+
 #config {
   width: 400px;
   margin: 5px;
@@ -148,7 +146,7 @@ body {
 .btnani{
   animation: jello;
   animation-duration: 1s;
-  width: 60px;
+  width: 60px!important
 }
 .btnani:focus{
   animation: bounceIn ;
