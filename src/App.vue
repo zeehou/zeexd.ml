@@ -2,13 +2,14 @@
   <div id="app">
     <n-back-top :right="100" />
     <header>
-      <h1 class="animate__animated animate__lightSpeedInRight">Counter-Strike: Global Offensive</h1>
+      <h1 class="animate__animated animate__jello">Counter-Strike: Global Offensive</h1>
       <!-- <h1>Config</h1> -->
      
 
       <div class="test" >
         <n-card
           id="config"
+          class="animate__animated animate__jello"
           title="Config" 
           hoverable
           :segmented="{
@@ -20,26 +21,27 @@
             <n-tooltip trigger="hover" placement="top-start">
               <template #trigger> <span class="animate__animated animate__flip">游戏：</span></template>
               请尽量把右方的两个cfg文件都放置在<br>csgo根目录下的cfg文件夹内 </n-tooltip
-            ><n-button class="btnconfig animate__animated animate__jello" tag="a" href="cfg/wb.cfg"
+            ><n-button class="btnconfig animate__animated animate__jello btnani" tag="a" href="cfg/wb.cfg"
               >Config</n-button
             >
 
-            <n-button id="auto" tag="a" href="cfg/autoexec.cfg">AutoExec</n-button>
+            <n-button class="btnani" tag="a" href="cfg/autoexec.cfg">AutoExec</n-button>
           </div>
           <div>
-            练习：<n-button class="btnconfig" tag="a" href="cfg/bot1.cfg"
+            练习：<n-button class="btnconfig btnani" tag="a" href="cfg/bot1.cfg"
               >Bot1</n-button
             >
-            <n-button class="btnconfig" tag="a" href="cfg/bot2.cfg"
+            <n-button class="btnconfig btnani" tag="a" href="cfg/bot2.cfg"
               >Bot2</n-button
             >
-            <n-button tag="a" href="cfg/train.cfg">Train</n-button>
+            <n-button class="btnani" tag="a" href="cfg/train.cfg">Train</n-button>
           </div>
 
           <div></div>
         </n-card>
         <n-card
           id="config"
+          class="animate__animated animate__jello"
           title="Test"
           hoverable
           :segmented="{
@@ -48,19 +50,19 @@
           }"
         >
           <div class="c1">
-            媒体测试：<n-button tag="a" href="https://www.onlinemictest.com/zh/"
+            媒体测试：<n-button class="btnani" tag="a" href="https://www.onlinemictest.com/zh/"
               >Mic Test</n-button
             >
           </div>
 
           <div>
             鼠标测试：<n-button
-              class="btnconfig"
+              class="btnconfig btnani"
               tag="a"
               href="tool/MouseRateChecker.rar"
               >RateTest</n-button
             >
-            <n-button tag="a" href="tool/MouseTest.zip">MouseTest</n-button>
+            <n-button class="btnani" tag="a" href="tool/MouseTest.zip">MouseTest</n-button>
           </div>
         </n-card>
       </div>
@@ -143,7 +145,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-#auto:focus{
+.btnani{
+  animation: jello;
+  animation-duration: 1s;
+}
+.btnani:focus{
   animation: bounceIn ;
   animation-duration: 2s;
 
