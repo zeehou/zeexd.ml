@@ -148,6 +148,7 @@ body {
 .btnani{
   animation: jello;
   animation-duration: 1s;
+  width: 60px;
 }
 .btnani:focus{
   animation: bounceIn ;
