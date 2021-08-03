@@ -146,17 +146,24 @@ body {
 .btnani{
   animation: jello;
   animation-duration: 1s;
-  width: 60px!important
+  width: 50px!important
 }
 .btnani:focus{
   animation: bounceIn ;
   animation-duration: 2s;
 
 }
+/* .posi{
+  position:sticky;
+  top: 0;
+  z-index: 20; 
+  background-color: azure;
+  width: 100vw;
+} */
 
 
-
-/* .animate__animated.animate__bounce {
+/* 
+.animate__animated.animate__bounce {
   --animate-duration: 2s;
 } */
 </style>
